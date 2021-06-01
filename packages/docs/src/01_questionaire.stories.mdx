@@ -1,0 +1,194 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Concepts/Questionaire &amp; Design System Modelling" />
+
+This Questionaire models basic aspects of the architectural foundation and discloses enablements & limits.
+Guided by our mindset & concepts the design-system questionaire provides good orientation on how to approach design complexity in elysion's finest manner.
+
+## Foundation
+
+Core Values, Design Principles, Code Conventions & Basic Concepts.
+
+Here are some inspirational Resources:
+
+- [Styleguides.io examples](http://styleguides.io/examples.html) Many public style guides showcase their design principles
+- [Design Principles FTW](http://www.designprinciplesftw.com/) A big collection of design principles.
+- [Design principle roundup](https://principles.adactio.com/) by Jeremy Keith rounds up a ton of principles from a ton of different fields.
+- [Creating Design Principles](https://articles.uie.com/creating-design-principles/) Jared Spool talks about the qualities of effective design principles.
+- [Shaping Our Design Principles](https://medium.com/building-creative-market/shaping-our-design-principles-3474d6f5204b)
+
+- **What design principles does your design system embrace?** Design principles underpin every aspect of the design system, and influence its construction. They should jive with your organization's broader mission and culture, and your design principles should be easily understood by everyone doing work with the design system.
+
+### **MINDFUL, CONCIOUSS, ACCOMODATING**
+
+Content Design
+
+### **COLORFUL, TOLERANT, BOLD**
+
+Design Language
+
+### **CREATIVE, FLEXIBLE, MODERN**
+
+Design Principles
+
+- simple artistic design
+- themable variations
+- modern best practices, a11y
+
+### **PURE, PRACTICAL, ACCESSIBLE**
+
+Technical Design
+
+**What platforms does the design system apply to?** (Web, iOS, Android, Windows, etc)
+
+- Web (Desktop, Tablet & Mobile Browsers) on Windows & UNIX-Based OS
+- _FUTURE:_
+  - Android/IOS -> far far away
+
+**What web technologies does the design system need to consider?**
+
+- React, TypeScript
+- Stitches.dev vs. Theme-UI
+- Storybook
+- NextJS deployed on VERCEL (_FUTURE_: Glitch.com / DigitalOcean.com)
+- Prisma ORM / PostgreSQL
+- Prismic CMS
+
+**What workflow guidelines do you follow?**
+
+When commiting changes make sure to follow common standards. See the table below for a simple summary on what convention commit-messages must adapt in order to comply conventional-commiting.
+
+| Commit Type |            Title            |            E Release             | Include in changelog |
+| :---------: | :-------------------------: | :------------------------------: | :------------------: |
+|   `feat`    |         ✨ Features         |            - `minor`             |        `true`        |
+|    `fix`    |        🐛 Bug Fixes         |            - `patch`             |        `true`        |
+|   `docs`    |      📚 Documentation       | - `patch` if `scope` is `readme` |        `true`        |
+|   `style`   |          💎 Styles          |                -                 |        `true`        |
+| `refactor`  |     📦 Code Refactoring     |                -                 |        `true`        |
+|   `perf`    | 🚀 Performance Improvements |            - `patch`             |        `true`        |
+|   `test`    |          🚨 Tests           |                -                 |        `true`        |
+|   `build`   |          🛠 Builds           |            - `patch`             |        `true`        |
+|    `ci`     | ⚙️ Continuous Integrations  |                -                 |        `true`        |
+|   `chore`   |          ♻️ Chores          |                -                 |        `true`        |
+|  `revert`   |          🗑 Reverts          |                -                 |        `true`        |
+
+---
+
+## HTML
+
+**What are some general principles your team should follow when writing HTML?**
+Most of us share similar definitions for common UI patterns like accordion, checkbox, combobox, dialog, dropdown, select, slider, and tooltip. These UI patterns are documented by WAI-ARIA and generally understood by the community.
+However, the implementations provided to us by the web platform are inadequate. They're either non-existent, lacking in functionality, or cannot be customized sufficiently.
+So, developers are forced to build custom components; an incredibly difficult task. As a result, most components on the web are inaccessible, non-performant, and lacking important features.
+Our goal is to create a well-funded, open-source component library that the community can use to build accessible design systems.
+
+### HTML Tools
+
+**Are you using a templating engine**
+None Yet. Maybe when we have a more atomic component workflow then we'll move to plopfile component generation with `.hbs` templates
+
+**Does your backend architecture influence the frontend markup in any way**
+Our Codebase is grown upon a headless/serverless approach.
+While growing up as a organization it's our aim to move away from loosy architectures to well specified Full Stack Solutions.
+
+### HTML Style
+
+**Spaces or Tabs?**
+
+- Use `2` spaces as a single `tab`-character
+
+**What does HTML commenting look like?**
+
+```html
+<!--#identifier start-->
+<!-- some #id-scoped comment content as string -->
+<!--#identifier begin--->
+```
+
+---
+
+## CSS
+
+### CSS Principles
+
+**What are some general principles your team should follow when writing CSS?**
+
+- _ABEM - Atomic BEM:_ `[a/m/o]-blockName__elementName--modifierName`: camelCase BEM + atomic prefix
+
+### CSS Tools
+
+**Is the team using a preprocessor**
+
+- CSS-in-JS: @stitches/react
+  **What are the guidelines for using that preprocessor**
+- check out [Stitches Documentation](https://stitches.dev/)
+  **Are you using a CSS base**
+- TODO: Modern CSS Reset
+  **Are there specific CSS techniques you're utilizing**
+- TODO: identify [critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/)
+
+---
+
+## JavaScript
+
+### JavaScript Principles
+
+**What are some general principles your team should follow when writing JavaScript?**
+
+- Use modern ES6 Syntax and follow linting setup extensively.
+
+### JavaScript tools
+
+**Are you using a JavaScript framework**
+
+- ReactJS & NextJS.
+  **Are you using any polyfills or shims**
+- TODO: inspect - do we need [any of these](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)?
+  **What third-party scripts are dependencies for your project**
+- TODO:
+  **Do you test your JavaScript?** If so, what tools do you use _(such as [Jasmine](https://jasmine.github.io/), [Karma](https://github.com/karma-runner/karma), [Selenium](http://docs.seleniumhq.org/), etc)_?
+- TODO:
+
+### JavaScript Style
+
+- [sirsimonson's eslint-config](https://github.com/sirsimonson/eslint-config)
+
+---
+
+## Media
+
+**How are you handling icons**
+
+- TODO:
+  **How are you handling responsive images**
+- TODO:
+  **Are you using any [tools](https://addyosmani.com/blog/image-optimization-tools/) to optimize and serve images**?
+- TODO:
+
+---
+
+## Fonts
+
+**How do you load custom fonts?**
+
+- TODO:
+  **Do you use any tools to help implement web fonts**
+- Adobe TypeKit
+- Google Fonts
+  **Do you use a service to manage and serve custom fonts** _(such as [Fonts.com](https://www.fonts.com/), [Typekit](https://typekit.com/), etc)_?
+
+---
+
+## Brand Identity
+
+**Where are brand identity guidelines managed?**
+
+- TODO: These include brand-wide elements such as logo, typography, color, tagline, marketing guidelines, etc.
+  **What is the relationship between the overall brand identity and UI components?**
+- TODO: There may be a tight relationship between the brand guidelines and UI (i.e. buttons and logo are, and must be, the same color) or there may be a loose relationship (i.e. Material Design's guidelines and Google's brand guidelines are quite different).
+  **Are you using any third-party tools or services to manage brand assets?**
+- TODO: Some of these tools include:
+  - [Brand.ai](http://brand.ai/)
+  - [Frontify](https://frontify.com/)
+
+---

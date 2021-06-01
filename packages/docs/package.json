@@ -1,0 +1,33 @@
+{
+  "name": "@initiative-elysion/docs",
+  "version": "0.0.0",
+  "description": "Elysion Design System Docs",
+  "author": "Christoph Simon <srsmnsn@gmail.com>",
+  "homepage": "https://github.com/initiative-elysion/ui#readme",
+  "license": "ISC",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initiative-elysion/ui.git"
+  },
+  "scripts": {
+    "docs:dev": "echo \"starting storybook...\" && start-storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/initiative-elysion/ui/issues"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-docs": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/addon-storysource": "^6.2.9",
+    "@storybook/builder-webpack5": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "storybook-addon-grid": "^0.0.13",
+    "storybook-addon-paddings": "^4.1.1"
+  },
+  "dependencies": {
+    "@initiative-elysion/components": "^0.0.0"
+  }
+}
