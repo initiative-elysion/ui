@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://use.typekit.net/nbo3apu.css');
+
+@font-face{
+  font-family:'pict0gramm';
+  src:url('/media/fonts/pict0gramm.eot?forceV7');
+  src:url('/media/fonts/pict0gramm.eot?#iefix&forceV7') format('embedded-opentype'),
+   url('/media/fonts/pict0gramm.woff?forceV7') format('woff'),
+   url('/media/fonts/pict0gramm.ttf?forceV7') format('truetype'),
+   url('/media/fonts/pict0gramm.svg#pict0gramm?forceV7') format('svg');
+  font-weight:normal;
+  font-weight:400;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
