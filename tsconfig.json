@@ -1,24 +1,29 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    // Target latest version of ECMAScript.
+    "target": "ESNext",
+    // "target": "es5",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    "jsx": "react",
+    // "jsx": "preserve",
+    // Don't emit; allow Babel to transform files.
+    "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "preserve",
     "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
     "outDir": "dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es5",
     "noImplicitAny": false,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "isolatedModules": true
   },
-  "exclude": ["node_modules", "pages"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "exclude": ["dist"]
 }

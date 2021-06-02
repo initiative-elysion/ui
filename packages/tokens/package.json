@@ -1,0 +1,29 @@
+{
+  "name": "@initiative-elysion/tokens",
+  "version": "0.0.0",
+  "description": "Elysion Design System Tokens",
+  "author": "Christoph Simon <srsmnsn@gmail.com>",
+  "homepage": "https://github.com/initiative-elysion/ui#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "directories": {
+    "dist": "dist",
+    "src": "src",
+    "assets": "assets"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/initiative-elysion/ui.git"
+  },
+  "scripts": {
+    "compile": "rollup -c",
+    "compile:watch": "rollup -c -w",
+    "docs:dev": "npm run compile:watch"
+  },
+  "bugs": {
+    "url": "https://github.com/initiative-elysion/ui/issues"
+  }
+}
