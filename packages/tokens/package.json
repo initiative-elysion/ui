@@ -21,7 +21,7 @@
   "scripts": {
     "compile": "rollup -c",
     "compile:watch": "rollup -c -w",
-    "docs:dev": "npm run compile:watch",
+    "docs:dev": "npm run compile",
     "lint": "eslint . --fix && prettier . --write"
   },
   "bugs": {

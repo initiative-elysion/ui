@@ -20,7 +20,7 @@
     "lint": "eslint . --fix && prettier . --write",
     "compile": "rollup -c",
     "compile:watch": "rollup -c -w",
-    "docs:dev": "npm run compile:watch"
+    "docs:dev": "npm run compile"
   },
   "bugs": {
     "url": "https://github.com/initiative-elysion/ui/issues"

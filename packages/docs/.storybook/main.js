@@ -9,12 +9,15 @@ module.exports = {
       name: '@storybook/addon-docs',
       options: {
         babelOptions: require('../../../babel.config.js'),
-        transcludeMarkdown: false,
+        transcludeMarkdown: true,
       },
     },
     "@storybook/addon-essentials",
     "storybook-addon-paddings",
     "storybook-addon-grid/preset",
     "@storybook/addon-storysource"
-  ]
+  ],
+  typescript: {
+    reactDocgen: "none"
+  }
 }

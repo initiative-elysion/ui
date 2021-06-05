@@ -1,4 +1,4 @@
-import { DocsPage, DocsContainer } from '@storybook/addon-docs';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
