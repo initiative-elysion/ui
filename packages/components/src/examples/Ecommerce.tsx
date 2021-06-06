@@ -36,7 +36,7 @@ import {
 
 export const Ecommerce = () => {
   return (
-    <Box>
+    <>
       <Box as="header">
         <Box css={{ bc: '$gray3', py: '$2', px: '$4' }}>
           <Flex css={{ ai: 'center', jc: 'space-between' }}>
@@ -480,7 +480,7 @@ export const Ecommerce = () => {
           </Flex>
         </Container>
       </Section>
-    </Box>
+    </>
   );
 }
 

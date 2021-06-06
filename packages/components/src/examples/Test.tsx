@@ -21,7 +21,7 @@ import { darkTheme } from '../stitches.config';
 
 export const Test = () => {
   return (
-    <Box css={{ height: '100%' }}>
+    <>
       <DarkThemeButton />
       <Toolbar />
       <Box css={{ bc: '$loContrast', height: '100%', px: 250, pt: '36px' }}>
@@ -496,7 +496,7 @@ export const Test = () => {
         <Layers />
         <Properties />
       </Box>
-    </Box>
+    </>
   );
 }
 

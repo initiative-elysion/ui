@@ -118,7 +118,7 @@ import { DarkThemeButton } from '../custom/DarkThemeButton';
 
 export const Home = () => {
   return (
-    <Box>
+    <>
       <DarkThemeButton />
 
       <Banner id="banner" variant="blue" rounded>
@@ -2998,7 +2998,7 @@ export const Home = () => {
           </Container>
         </Section>
       </Box>
-    </Box>
+    </>
   );
 }
 
