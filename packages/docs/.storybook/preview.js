@@ -7,6 +7,8 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
+    expanded: true,
+    sort: 'requiredFirst'
   },
   docs: {
     container: DocsContainer,
@@ -15,9 +17,9 @@ export const parameters = {
   grid: {
     gridOn: true,
     columns: 12,
-    gap: '20px',
-    gutter: '50px',
-    maxWidth: '1024px',
+    gap: '30px',
+    gutter: '15px',
+    maxWidth: '1140px',
   },
   paddings: {
     values: [
@@ -25,6 +27,5 @@ export const parameters = {
       { name: 'Medium', value: '32px' },
       { name: 'Large', value: '64px' },
     ],
-    default: 'Medium',
   },
 }
