@@ -19,7 +19,7 @@ export interface IPalette {
   }
 }
 
-const palette: IPalette = {
+const colors: IPalette = {
   primary: {
     main: "#0d47a1",
   },
@@ -35,4 +35,4 @@ const palette: IPalette = {
   },
 }
 
-export default palette
+export default colors

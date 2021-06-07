@@ -1,17 +1,26 @@
-import palette, { IPalette } from './palette';
-import spacing, { ISpacing } from './spacing';
-import shape, { IShape } from './shape';
+import colors, { IPalette } from './colors';
+import fonts, { IFonts } from './fonts';
+import radii, { IRadii } from './radii';
+import size, { ISizes } from './size';
+import zIndices, { IZIndices } from './zIndices';
+import space, { ISpacing } from './space';
 
 export interface IDesignTokens {
-    palette: IPalette;
-    spacing: ISpacing;
-    shape: IShape;
+    colors: IPalette
+    fonts: IFonts
+    radii: IRadii
+    size: ISizes
+    zIndices: IZIndices
+    space: ISpacing
 }
 
 const designTokens: IDesignTokens = {
-    palette,
-    spacing,
-    shape,
+    colors,
+    fonts,
+    radii,
+    size,
+    zIndices,
+    space,
 };
 
 export default designTokens;

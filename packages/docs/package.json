@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "eslint . --fix && prettier . --write",
     "docs:dev": "echo \"starting storybook...\" && start-storybook",
-    "compile": "build-storybook && mv storybook-static/ ../../dist/",
+    "compile": "build-storybook && rm ../../dist/storybook-static -rf && mv storybook-static/ ../../dist/",
     "chromatic": "chromatic --project-token=4f0b2c744aac",
     "ci": "yarn chromatic"
   },
